@@ -1,0 +1,162 @@
+[gd_scene format=3 uid="uid://lspplp63b0f5"]
+
+[ext_resource type="Script" uid="uid://dmykatoit843c" path="res://main.gd" id="1_dd2wi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_evento"]
+content_margin_left = 20.0
+content_margin_top = 12.0
+content_margin_right = 20.0
+content_margin_bottom = 12.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.7294118, 0.8352941, 1, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="game" type="Control" unique_id=1490099496]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dd2wi")
+metadata/_custom_type_script = "uid://78g83kepdq6n"
+metadata/_edit_horizontal_guides_ = [427.0]
+metadata/_edit_vertical_guides_ = [35.0]
+
+[node name="btnPull" type="Button" parent="." unique_id=66561088]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 36.0
+offset_top = 429.0
+offset_right = 198.0
+offset_bottom = 510.0
+theme_override_font_sizes/font_size = 32
+text = "Puxar"
+
+[node name="btnKeep" type="Button" parent="." unique_id=483903525]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 36.0
+offset_top = 538.0
+offset_right = 202.0
+offset_bottom = 621.0
+theme_override_font_sizes/font_size = 32
+text = "Manter"
+
+[node name="btnReset" type="Button" parent="." unique_id=319788957]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 540.0
+offset_right = 400.125
+offset_bottom = 621.0
+theme_override_font_sizes/font_size = 32
+text = "Reiniciar"
+
+[node name="Board" type="Label" parent="." unique_id=308636594]
+layout_mode = 0
+offset_left = 41.0
+offset_top = 43.0
+offset_right = 1125.0
+offset_bottom = 369.0
+theme_override_font_sizes/font_size = 32
+text = "Cartas"
+
+[node name="hand" type="ColorRect" parent="." unique_id=522836464]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.273
+anchor_bottom = 0.416
+offset_left = 438.0
+offset_top = 203.0
+offset_right = 822.504
+offset_bottom = 381.432
+
+[node name="EndGame" type="Label" parent="." unique_id=977410189]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 179.0
+offset_right = 1148.0
+offset_bottom = 309.0
+theme_override_font_sizes/font_size = 64
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="namePlayer1" type="LineEdit" parent="." unique_id=1346418105]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 229.0
+offset_right = 301.0
+offset_bottom = 287.0
+theme_override_font_sizes/font_size = 25
+placeholder_text = "name first player:"
+alignment = 1
+
+[node name="namePlayer2" type="LineEdit" parent="." unique_id=251502596]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 313.0
+offset_right = 332.0
+offset_bottom = 374.0
+theme_override_font_sizes/font_size = 25
+placeholder_text = "name second player:"
+alignment = 1
+
+[node name="btnStart" type="Button" parent="." unique_id=306539713]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 431.0
+offset_right = 406.0
+offset_bottom = 507.0
+theme_override_font_sizes/font_size = 25
+text = "Iniciar
+"
+
+[node name="EventLabel" type="Label" parent="." unique_id=1700436230]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -340.0
+offset_top = -10.0
+offset_right = 340.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(7.70092e-06, 0.78580385, 0.09298793, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_evento")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ScoreBoard" type="Label" parent="." unique_id=1520489750]
+layout_mode = 0
+offset_left = 723.0
+offset_top = 139.0
+offset_right = 1005.0
+offset_bottom = 200.0
+theme_override_font_sizes/font_size = 25
+text = "teste"
+
+[node name="nomes" type="Label" parent="." unique_id=801022843]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 164.0
+offset_right = 459.0
+offset_bottom = 221.0
+theme_override_font_sizes/font_size = 25
+text = "participantes:"
+
+[connection signal="button_up" from="btnPull" to="." method="_on_puxar_button_up"]
+[connection signal="button_up" from="btnKeep" to="." method="_on_manter_button_up"]
+[connection signal="button_up" from="btnReset" to="." method="_on_btn_reset_button_up"]
+[connection signal="button_up" from="btnStart" to="." method="_on_btn_start_button_up"]

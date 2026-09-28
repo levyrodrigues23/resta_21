@@ -1,0 +1,10 @@
+Retratos das cartas de figura (recortados, redimensionados e convertidos para sépia).
+Todos em domínio público, obtidos no Wikimedia Commons.
+
+lampiao.png       - Benjamin Abrahão Botto, 1936. "Lampião e Benjamin Abrahão Botto (cropped).jpg" (PD-Brazil-Media)
+maria_bonita.png  - Benjamin Abrahão Botto, 1936. "Maria Bonita, 1936 (cropped).jpg" (PD-Brazil-Media)
+padre_cicero.png  - Autor desconhecido, c. 1924. "Padre Cícero c. 1924 (cropped).jpg" (domínio público, lei brasileira)
+dragao_do_mar.png - Angelo Agostini, Revista Illustrada nº 376, 1884. "Francisco Nascimento 1884 Revista Illustrada 376 (cropped).jpg" (domínio público)
+
+Figuras sem imagem ainda usam emoji. Para trocar, coloque um PNG com o nome indicado
+nesta pasta (ex.: vaqueiro.png) e o jogo carrega automaticamente.
